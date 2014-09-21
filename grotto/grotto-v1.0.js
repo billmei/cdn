@@ -1,5 +1,6 @@
-var SERVER_URL = '//localhost:8000';
-// var SERVER_URL = '//grottio.io';
+// var SERVER_URL = 'localhost:8000';
+// var SERVER_URL = 'grotto.io';
+var SERVER_URL = 'kortaggio.github.io/cdn/grotto';
 
 function getScript(url, success) {
   var script = document.createElement('script');
