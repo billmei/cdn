@@ -4,6 +4,7 @@
 	position: fixed;
 	bottom: 0;
 	right: 25px;
+	font-size: 14px;
 	display: block;
 	background-color: #009999;
 	-webkit-box-shadow: 0 0 6px #A9A9A9;
