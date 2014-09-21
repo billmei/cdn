@@ -1,6 +1,7 @@
-// var SERVER_URL = 'localhost:8000';
-// var SERVER_URL = 'grotto.io';
-var SERVER_URL = 'kortaggio.github.io/cdn/grotto';
+// var CDN_URL = 'localhost:8000';
+// var CDN_URL = 'grotto.io';
+var CDN_URL = 'kortaggio.github.io/cdn/grotto';
+var SERVER_URL = 'localhost:5000';
 
 function getScript(url, success) {
   var script = document.createElement('script');
@@ -40,7 +41,7 @@ getScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', functio
   // for further down the road
   var namespace="messenger"
   // connects to server
-  var socket = io.connect('//'+ document.domain + ':' + location.port + namespace);
+  var socket = io.connect('//'+ SERVER_URL + namespace);
   // initialize messages
   var messages = [];
   var user = 'tyler thomas';
@@ -97,7 +98,7 @@ getScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', functio
   })
   $('#grotto .action-back').on('click', function(e) {
     $('#grotto .bottom-container').addClass('hide');
-    $('#grotto #bar-img').attr({src: '//'+ SERVER_URL +'/grotto-logo.png'});
+    $('#grotto #bar-img').attr({src: '//'+ CDN_URL +'/grotto-logo.png'});
     $('#grotto #bar-desc').html('grotto.io').removeClass('title-case');
   });
 });
