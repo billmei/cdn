@@ -97,7 +97,7 @@ getScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', functio
   })
   $('#grotto .action-back').on('click', function(e) {
     $('#grotto .bottom-container').addClass('hide');
-    $('#grotto #bar-img').attr({src: SERVER_URL +'/grotto-logo.png'});
+    $('#grotto #bar-img').attr({src: '//'+ SERVER_URL +'/grotto-logo.png'});
     $('#grotto #bar-desc').html('grotto.io').removeClass('title-case');
   });
 });
